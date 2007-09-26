@@ -1,7 +1,7 @@
 # EDIT IN SVN NOT IN SOURCE PACKAGE (NO PATCH ALLOWED).
 
 %define	name	monitor-edid
-%define	version	1.11
+%define	version	1.12
 %define	release	%mkrel 1
 
 Summary:	Get monitor details
@@ -27,13 +27,7 @@ monitor.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
-install -d $RPM_BUILD_ROOT%{_sbindir}
-install monitor-edid monitor-get-edid-using-vbe monitor-probe monitor-probe-using-X $RPM_BUILD_ROOT%{_sbindir}
-install monitor-parse-edid $RPM_BUILD_ROOT%{_bindir}
-install cvt $RPM_BUILD_ROOT%{_bindir}/vesa-cvt
-
-ln -s monitor-edid $RPM_BUILD_ROOT%{_sbindir}/monitor-get-edid
+%makeinstall_std
 
 %clean
 rm -rf $RPM_BUILD_ROOT
