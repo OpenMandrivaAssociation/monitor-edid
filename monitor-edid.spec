@@ -1,7 +1,7 @@
 # EDIT IN SVN NOT IN SOURCE PACKAGE (NO PATCH ALLOWED).
 
 %define	name	monitor-edid
-%define	version	1.15
+%define	version	1.16
 %define	release	%mkrel 1
 
 Summary:	Get monitor details
@@ -11,7 +11,7 @@ Release:	%{release}
 Source0:	%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		System/Configuration/Other
-Url:		http://qa.mandriva.com/twiki/bin/view/Main/Monitor-edid
+Url:		http://wiki.mandriva.com/en/Tools/monitor-edid
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 ExcludeArch:	%{sunsparc}
 
