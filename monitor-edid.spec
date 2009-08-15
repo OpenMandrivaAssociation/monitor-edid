@@ -1,8 +1,8 @@
 # EDIT IN SVN NOT IN SOURCE PACKAGE (NO PATCH ALLOWED).
 
 %define	name	monitor-edid
-%define	version	2.1
-%define	release	%mkrel 2
+%define	version	2.2
+%define	release	%mkrel 1
 
 Summary:	Get monitor details
 Name:		%{name}
@@ -37,6 +37,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-%doc README
+%doc README NEWS
 %{_bindir}/*
 %{_sbindir}/*
