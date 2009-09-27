@@ -2,7 +2,7 @@
 
 %define	name	monitor-edid
 %define	version	2.3
-%define	release	%mkrel 1
+%define	release	%mkrel 2
 
 Summary:	Get monitor details
 Name:		%{name}
@@ -16,7 +16,7 @@ Url:		http://wiki.mandriva.com/en/Tools/monitor-edid
 BuildRequires:	liblrmi-devel
 %endif
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-ExcludeArch:	%{sunsparc}
+ExcludeArch:	%{sunsparc} %arm %mips
 
 %description
 This package will try to read the monitor details directly from the
