@@ -1,7 +1,7 @@
 # EDIT IN SVN NOT IN SOURCE PACKAGE (NO PATCH ALLOWED).
 
 %define	name	monitor-edid
-%define	version	2.4
+%define	version	2.5
 %define	release	%mkrel 1
 
 Summary:	Get monitor details
