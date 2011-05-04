@@ -2,7 +2,7 @@
 
 %define	name	monitor-edid
 %define	version	3.0
-%define	release	%mkrel 2
+%define	release	%mkrel 3
 
 Summary:	EDID retrieval and parsing tools
 Name:		%{name}
