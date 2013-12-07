@@ -1,7 +1,7 @@
 Summary:	EDID retrieval and parsing tools
 Name:		monitor-edid
 Version:	3.0
-Release:	11
+Release:	12
 License:	GPLv3+
 Group:		System/Configuration/Other
 Url:		http://wiki.mandriva.com/en/Tools/monitor-edid
