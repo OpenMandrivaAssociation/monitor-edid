@@ -1,7 +1,7 @@
 Summary:	EDID retrieval and parsing tools
 Name:		monitor-edid
-Version:	3.0
-Release:	15
+Version:	3.1
+Release:	1
 License:	GPLv3+
 Group:		System/Configuration/Other
 Url:		http://wiki.mandriva.com/en/Tools/monitor-edid
@@ -19,7 +19,7 @@ other methods of monitor probing.
 %setup -q
 
 %build
-%make CFLAGS="$RPM_OPT_FLAGS"
+%make CFLAGS="%{optflags}"
 
 %install
 %makeinstall_std
