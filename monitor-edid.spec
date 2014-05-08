@@ -6,10 +6,8 @@ License:	GPLv3+
 Group:		System/Configuration/Other
 Url:		http://wiki.mandriva.com/en/Tools/monitor-edid
 Source0:	%{name}-%{version}.tar.bz2
-%ifarch %ix86 x86_64
 BuildRequires:	libx86-devel
-%endif
-ExcludeArch:	%arm %mips
+ExcludeArch:	ppc ppc64 s390 s390x %{sparcx} %{mipsx}
 
 %description
 This package provides tools for EDID retrieval, EDID parsing and
