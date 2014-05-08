@@ -5,7 +5,7 @@ Release:	1
 License:	GPLv3+
 Group:		System/Configuration/Other
 Url:		http://wiki.mandriva.com/en/Tools/monitor-edid
-Source0:	%{name}-%{version}.tar.bz2
+Source0:	%{name}-%{version}.tar.xz
 BuildRequires:	libx86-devel
 ExcludeArch:	ppc ppc64 s390 s390x %{sparcx} %{mipsx}
 
@@ -26,4 +26,3 @@ other methods of monitor probing.
 %doc README NEWS
 %{_bindir}/*
 %{_sbindir}/*
-
