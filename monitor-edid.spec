@@ -1,18 +1,18 @@
 Summary:	EDID retrieval and parsing tools
 Name:		monitor-edid
-Version:	3.1
-Release:	8
+Version:	3.4
+Release:	1
 License:	GPLv3+
 Group:		System/Configuration/Other
-Url:		http://wiki.mandriva.com/en/Tools/monitor-edid
-Source0:	%{name}-%{version}.tar.xz
-patch0:	monitor-edid-3.2-stdint-include.patch
+Url:		https://gitweb.mageia.org/software/monitor-edid
+Source0:	https://gitweb.mageia.org/software/%{name}/snapshot/%{name}-%{version}.tar.xz
 BuildRequires:	libx86-devel
 ExclusiveArch:	%{ix86} %{x86_64}
 
 %description
-This package provides tools for EDID retrieval, EDID parsing and
-other methods of monitor probing.
+Monitor-edid is a tool for probing and parsing Extended display
+identification data (EDID) from monitors.
+For more information about EDID, see https://en.wikipedia.org/wiki/EDID
 
 %prep
 %autosetup -p1
@@ -26,4 +26,4 @@ other methods of monitor probing.
 %files
 %doc README NEWS
 %{_bindir}/*
-%{_sbindir}/*
+%optional %{_sbindir}/monitor-*
