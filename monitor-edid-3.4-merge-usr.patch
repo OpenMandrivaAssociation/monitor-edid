@@ -1,0 +1,27 @@
+diff -Naur monitor-edid-3.4/Makefile monitor-edid-3.4.tpg/Makefile
+--- monitor-edid-3.4/Makefile	2021-01-25 22:50:05.000000000 +0000
++++ monitor-edid-3.4.tpg/Makefile	2022-08-16 18:01:05.094274017 +0000
+@@ -19,7 +19,6 @@
+ 
+ DESTDIR=
+ bindir=/usr/bin
+-sbindir=/usr/sbin
+ 
+ TARGETS =
+ ifdef HAS_VBE
+@@ -38,13 +37,11 @@
+ 
+ install: $(TARGETS)
+ 	install -d $(DESTDIR)$(bindir)
+-	install -d $(DESTDIR)$(sbindir)
+-	install monitor-edid monitor-probe monitor-probe-using-X $(DESTDIR)$(sbindir)
++	install monitor-edid monitor-probe monitor-probe-using-X $(DESTDIR)$(bindir)
+ ifdef HAS_VBE
+-	install monitor-get-edid-using-vbe $(DESTDIR)$(sbindir)
++	install monitor-get-edid-using-vbe $(DESTDIR)$(bindir)
+ endif
+ 	install monitor-parse-edid $(DESTDIR)$(bindir)
+-	ln -sf monitor-edid $(DESTDIR)$(sbindir)/monitor-get-edid
+ 
+ clean:
+ 	$(RM) $(TARGETS) *.a *.o *~
