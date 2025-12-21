@@ -7,6 +7,7 @@ Group:		System/Configuration/Other
 Url:		https://gitweb.mageia.org/software/monitor-edid
 Source0:	https://gitweb.mageia.org/software/%{name}/snapshot/%{name}-%{version}.tar.xz
 Patch0:		monitor-edid-3.4-merge-usr.patch
+BuildRequires:	make
 BuildRequires:	libx86-devel
 ExclusiveArch:	%{ix86} %{x86_64}
 
